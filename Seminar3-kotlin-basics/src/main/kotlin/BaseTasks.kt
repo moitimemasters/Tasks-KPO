@@ -11,8 +11,8 @@ import kotlin.math.sqrt
  */
 fun askForInput() {
     print("Введите ваше ФИО: ")
-    val full_name = readln().split(" ").toList();
-    println(String.format("Фамилия: ${full_name[0]}\nИмя: ${full_name[1]}\nОтчество: ${full_name[2]}", ))
+    val fullName = readln().split(" ").toList();
+    println("Фамилия: ${fullName[0]}\nИмя: ${fullName[1]}\nОтчество: ${fullName[2]}")
 }
 
 /**
@@ -38,7 +38,7 @@ fun main() {
     askForInput()
 
     val roots = quadraticRoots(-5.0, 4.0, 3.0)
-    println("X1 = ${roots.first} ; X2 =${roots.second}")
+    println("X1 = ${roots.first} ; X2 = ${roots.second}")
 
     printSameDigitNumbers()
 }
